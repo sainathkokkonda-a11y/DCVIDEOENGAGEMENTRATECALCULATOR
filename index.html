@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Video Engagement Rate Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="tool-card">
+  <div class="tool-header">
+    <h1>Video Engagement Rate Calculator</h1>
+    <p>Calculate Engagement Rate for YouTube, Instagram Reels &amp; TikTok</p>
+  </div>
+
+  <div class="tool-body">
+    <div class="step-group">
+      <label class="step-label">1. Total Views</label>
+      <input id="views" min="0" placeholder="e.g. 10000" type="number">
+    </div>
+
+    <div class="step-group">
+      <label class="step-label">2. Total Likes</label>
+      <input id="likes" min="0" placeholder="e.g. 500" type="number">
+    </div>
+
+    <div class="step-group">
+      <label class="step-label">3. Total Comments</label>
+      <input id="comments" min="0" placeholder="e.g. 50" type="number">
+    </div>
+
+    <div class="step-group">
+      <label class="step-label">4. Total Shares (Optional)</label>
+      <input id="shares" min="0" placeholder="e.g. 20" type="number">
+    </div>
+
+    <div class="btn-container">
+      <button class="action-btn" onclick="calculateRate()">Calculate</button>
+      <button class="action-btn clear-btn" onclick="clearFields()">Clear</button>
+    </div>
+
+    <div class="result-box" id="resultBox">
+      <div class="result-title">Engagement Rate</div>
+      <div class="result-value" id="rateValue">0.00%</div>
+      <div class="result-status" id="statusText"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
